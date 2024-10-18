@@ -8,9 +8,6 @@ tailwind.config = {
                 Outfit: ["Outfit", "sans-serif"],
                 Ovo: ["Ovo", "serif"],
             },
-            animation: {
-                spin_slow: "spin 6s linear infinite",
-            },
             colors: {
                 lightHover: "#f4fff4",
                 darkHover: "#2a004a",
