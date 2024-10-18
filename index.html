@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TOWING68</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="tailwind.config.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Ovo&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="images/logo/logo_light.png" type="image/x-icon">
+</head>
+
+<body class="overflow-x-hidden font-Outfit leading-8 dark:bg-darkTheme dark:text-white">
+    <div class="fixed top-0 right-0 w-11/12 -z-10 translate-y-[-80%] dark:hidden">
+        <img src="images/assets/header-bg-color.png" alt="" class="w-full" />
+    </div>
+
+    <!-- navbar section start -->
+    <nav class="w-full fixed px-5 lg:px-8 xl:px-[8%] py-4 flex items-center justify-between z-50">
+        <a href="#top">
+            <img src="images/logo/logo_light.png" alt="" class="w-28 cursor-pointer mr-14 dark:hidden" />
+            <img src="images/logo/logo_dark.png" alt="" class="w-28 cursor-pointer mr-14 hidden dark:block" />
+        </a>
+
+        <ul
+            class="hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 bg-white shadow-sm bg-opacity-50 font-Ovo dark:border dark:border-white/50 dark:bg-transparent">
+            <li><a href="#top">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#connect">Connect</a></li>
+        </ul>
+
+        <div class="flex items-center gap-4">
+            <button onclick="toggleTheme()">
+                <img src="images/assets/moon_icon.png" alt="" class="w-6 dark:hidden" />
+                <img src="images/assets/sun_icon.png" alt="" class="w-6 hidden dark:block" />
+            </button>
+
+            <a href="#top"
+                class="hidden lg:flex items-center gap-3 px-10 py-2.5 border border-gray-500 rounded-full ml-4 font-Ovo dark:border-white/50  hover:bg-lightHover duration-500 dark:hover:bg-darkHover">
+                Contact
+                <img src="images/assets/arrow-icon.png" alt="" class="w-3 dark:hidden" />
+                <img src="images/assets/arrow-icon-dark.png" alt="" class="w-3 hidden dark:block" />
+            </a>
+
+            <button class="block md:hidden ml-3" onclick="openMenu()">
+                <img src="images/assets/menu-black.png" alt="" class="w-6 dark:hidden" />
+                <img src="images/assets/menu-white.png" alt="" class="w-6 hidden dark:block" />
+            </button>
+        </div>
+
+        <!-- navbar mobile menu start -->
+        <ul id="sideMenu"
+            class="flex md:hidden flex-col gap-4 py-20 px-10 fixed -right-64 top-0 bottom-0 w-64 z-50 h-screen bg-lightHover transition duration-500 font-Ovo dark:bg-darkHover dark:text-white">
+
+            <div class="absolute right-6 top-6" onclick="closeMenu()">
+                <img src="images/assets/close-black.png" alt="" class="w-5 cursor-pointer dark:hidden" />
+                <img src="images/assets/close-white.png" alt="" class="w-5 cursor-pointer hidden dark:block" />
+            </div>
+
+            <li><a href="#top" onclick="closeMenu()">Home</a></li>
+            <li><a href="#services" onclick="closeMenu()">Services</a></li>
+            <li><a href="#gallery" onclick="closeMenu()">Gallery</a></li>
+            <li><a href="#contact" onclick="closeMenu()">Contact</a></li>
+        </ul>
+        <!-- navbar mobile menu end -->
+    </nav>
+    <!-- navbar section end -->
+
+    <!-- header section start -->
+    <div class=" w-11/12 max-w-3xl text-center mx-auto h-screen flex flex-col items-center justify-center gap-4">
+        <h3 class=" flex items-center gap-2 text-xl md:text-2xl mb-3 font-Ovo">
+            Towing Services Profesional
+        </h3>
+        <h1 class="text-3xl sm:text-5xl lg:text-[36px] font-Ovo">
+            Jasa Towing Alat Berat, Mobil, dan Motor <br> terjangkau di Jabodetabekjur dan sekitarnya <br> siap 24/7!
+        </h1>
+        <p class="max-w-2xl mx-auto font-Ovo leading-tight">
+            Melayani derek/towing kendaraan anda dengan aman, terpercaya dan bergaransi. Menerima pengiriman dalam
+            maupun luar kota
+            <br>
+            Untuk informasi lebih lanjut silahkan menghubungi nomor dibawah ini.
+        </p>
+
+        <div class="flex flex-col sm:flex-row items-center gap-4 mt-4">
+            <a href="https://wa.me/6281295853801"
+                class="px-10 py-3 border rounded-full bg-gradient-to-r from-[#355700] to-[#00ff00] text-white flex items-center gap-2">
+                WhatsApp
+                <img src="images/assets/whatsapp.png" alt="" class="w-10" />
+            </a>
+
+            <a href="tel: +6281295853801"
+                class="px-10 py-3 border rounded-full border-gray-500 bg-white flex items-center gap-2 dark:text-black cursor-pointer hover:bg-lightHover duration-500">
+                Hubungi langsung
+                <img src="images/assets/direct_call.png" alt="" class="w-10" />
+            </a>
+        </div>
+    </div>
+    <!-- header section end -->
+
+    <!-- services section start -->
+    <div id="services" class="w-full px-[12%] py-10 scroll-mt-12">
+        <h4 class="text-center mb-2 text-lg font-Ovo">What i offer</h4>
+        <h2 class="text-center text-5xl font-Ovo">My services</h2>
+        <p class="text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo">
+            Towing Andal, Pelayanan Prima, Harga Bersahabat, 24 Jam Nonstop
+        </p>
+        <div class="grid grid-cols-auto lg:grid-cols-4 gap-6 my-10">
+
+            <div
+                class="border border-gray-400 rounded-lg px-8 py-12 hover:shadow-black cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 dark:hover:bg-darkHover dark:hover:shadow-white">
+                <div class="w-10 bg-white rounded">
+                    <img src="images/assets/certificate.png" alt="" class="w-10" />
+                </div>
+                <h3 class="text-lg my-4 text-gray-700 dark:text-white">Professional Driver</h3>
+                <p class="text-sm text-gray-600 leading-5 dark:text-white/80">
+                    Dikemudikan oleh driver yang profesional dengan pengalaman bertahun-tahun, sehingga memastikan
+                    keamanan dan keselamatan kendaraan anda.
+                </p>
+            </div>
+
+            <div
+                class="border border-gray-400 rounded-lg px-8 py-12 hover:shadow-black cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 dark:hover:bg-darkHover dark:hover:shadow-white">
+                <div class="w-10 bg-white rounded">
+                    <img src="images/assets/insurance.png" alt="" class="w-10" />
+                </div>
+                <h3 class="text-lg my-4 text-gray-700 dark:text-white">Safety Guaranteed</h3>
+                <p class="text-sm text-gray-600 leading-5 dark:text-white/80">
+                    Untuk mendapatkan kepercayaan yang maksimal, kami memberikan garansi apabila terjadi sesuatu yang
+                    tidak diinginkan dalam proses penjemputan atau pengiriman kendaraan anda.
+                </p>
+            </div>
+
+            <div
+                class="border border-gray-400 rounded-lg px-8 py-12 hover:shadow-black cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 dark:hover:bg-darkHover dark:hover:shadow-white">
+                <div class="w-10 bg-white rounded">
+                    <img src="images/assets/money.png" alt="" class="w-10" />
+                </div>
+                <h3 class="text-lg my-4 text-gray-700 dark:text-white">Affordable</h3>
+                <p class="text-sm text-gray-600 leading-5 dark:text-white/80">
+                    Harga rasional yang tidak memberatkan anda, Hubungi langsung untuk info lebih lanjut.
+                </p>
+            </div>
+
+            <div
+                class="border border-gray-400 rounded-lg px-8 py-12 hover:shadow-black cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 dark:hover:bg-darkHover dark:hover:shadow-white">
+                <div class="w-10 bg-white rounded">
+                    <img src="images/assets/24-7.png" alt="" class="w-10" />
+                </div>
+                <h3 class="text-lg my-4 text-gray-700 dark:text-white">24/7</h3>
+                <p class="text-sm text-gray-600 leading-5 dark:text-white/80">
+                    Senantiasa melayani 24 jam nonstop, siap membantu kapan saja.
+
+                </p>
+            </div>
+
+            <div
+                class="border border-gray-400 rounded-lg px-8 py-12 hover:shadow-black cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 dark:hover:bg-darkHover dark:hover:shadow-white">
+                <div class="w-10 bg-white rounded">
+                    <img src="images/assets/international.png" alt="" class="w-10" />
+                </div>
+                <h3 class="text-lg my-4 text-gray-700 dark:text-white">Locations</h3>
+                <p class="text-sm text-gray-600 leading-5 dark:text-white/80">
+                    Melayani derek untuk daerah JABODETABEKJUR, Banten, Serang, & sekitarnya, Baik dalam maupun luar
+                    kota.
+                </p>
+            </div>
+
+            <div
+                class="border border-gray-400 rounded-lg px-8 py-12 hover:shadow-black cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 dark:hover:bg-darkHover dark:hover:shadow-white">
+                <div class="w-10 bg-white rounded">
+                    <img src="images/assets/log.png" alt="" class="w-10" />
+                </div>
+                <h3 class="text-lg my-4 text-gray-700 dark:text-white">Armada Tangguh</h3>
+                <p class="text-sm text-gray-600 leading-5 dark:text-white/80">
+                    Armada khusus yang sangat prima, Dan selalu melakukan pengecekan secara berkala agar dapat
+                    memberikan
+                    pelayanan yang
+                    maksimal.
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- services section end -->
+
+    <!-- gallery section start -->
+    <div id="gallery" class="w-full px-[12%] py-10 scroll-mt-12">
+        <h4 class="text-center mb-2 text-lg font-Ovo">Gallery</h4>
+        <h2 class="text-center text-5xl font-Ovo">My latest work</h2>
+        <p class="text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo">
+            Gallery Services
+        </p>
+        <div class="image-container grid grid-cols-auto lg:grid-cols-3 my-10 gap-5 dark:text-black">
+
+            <div class="overflow-hidden rounded cursor-pointer">
+                <img class="hover:scale-110 transition ease-in-out" src="images/picture_1.jpg" alt="">
+            </div>
+            <div class="overflow-hidden rounded cursor-pointer">
+                <img class="hover:scale-110 transition ease-in-out" src="images/picture_2.jpg" alt="">
+            </div>
+            <div class="overflow-hidden rounded cursor-pointer">
+                <img class="hover:scale-110 transition ease-in-out" src="images/picture_3.jpg" alt="">
+            </div>
+            <div class="overflow-hidden rounded cursor-pointer">
+                <img class="hover:scale-110 transition ease-in-out" src="images/picture_4.jpg" alt="">
+            </div>
+            <div class="overflow-hidden rounded cursor-pointer">
+                <img class="hover:scale-110 transition ease-in-out" src="images/picture_5.jpg" alt="">
+            </div>
+            <div class="overflow-hidden rounded cursor-pointer">
+                <img class="hover:scale-110 transition ease-in-out" src="images/picture_6.jpg" alt="">
+            </div>
+            <div class="overflow-hidden rounded cursor-pointer">
+                <img class="hover:scale-110 transition ease-in-out" src="images/picture_7.jpg" alt="">
+            </div>
+            <div class="overflow-hidden rounded cursor-pointer">
+                <img class="hover:scale-110 transition ease-in-out" src="images/picture_8.jpg" alt="">
+            </div>
+            <div class="overflow-hidden rounded cursor-pointer">
+                <img class="hover:scale-110 transition ease-in-out" src="images/picture_9.jpg" alt="">
+            </div>
+            <div class="overflow-hidden rounded cursor-pointer">
+                <img class="hover:scale-110 transition ease-in-out" src="images/picture_10.jpg" alt="">
+            </div>
+        </div>
+
+        <div class="popup-image fixed top-0 left-0 bg-[rgba(0,0,0,.9)] h-screen w-screen z-[100] hidden">
+            <span
+                class="absolute top-0 right-0 md:right-6 text-6xl font-[600] text-white cursor-pointer z-[100]">&times;</span>
+            <img class="absolute top-1/2 left-1/2 transform -translate-x-1/2  -translate-y-1/2  border-5 border-white rounded w-750 sm:w-11/12 object-cover"
+                src="" alt="">
+        </div>
+    </div>
+    <!-- gallery section end -->
+
+    <!-- connect section start -->
+    <div id="connect"
+        class="w-full px-[12%] py-10 scroll-mt-12 bg-[url('images/footer-bg-color.png')] bg-no-repeat bg-[length:90%_auto] bg-center dark:bg-none">
+        <h4 class="text-center mb-2 text-lg font-Ovo">Connect with me</h4>
+        <h2 class="text-center text-5xl font-Ovo">Get in touch</h2>
+        <p class="text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo">
+            Saya ingin mendengar pendapat Anda! Jika Anda mempunyai pertanyaan, komentar, atau masukan, silakan gunakan
+            formulir di bawah ini.
+        </p>
+
+        <form method="post" action="https://api.web3forms.com/submit" class="max-w-2xl mx-auto">
+            <input type="hidden" name="access_key" value="c536282e-4799-4156-96d1-cb0fa869c499">
+
+            <div class="grid grid-cols-auto gap-6 mt-10 mb-8">
+                <input type="text" placeholder="Enter your name"
+                    class="flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-white dark:bg-darkHover/30 dark:border-white/90"
+                    required name="name">
+
+                <input type="email" placeholder="Enter your email"
+                    class="flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-white dark:bg-darkHover/30 dark:border-white/90"
+                    required name="email">
+            </div>
+
+            <textarea rows="6" placeholder="Enter your message"
+                class="w-full p-4 outline-none border-[0.5px] border-gray-400 rounded-md bg-white mb-6 dark:bg-darkHover/30 dark:border-white/90"
+                required name="message"></textarea>
+
+            <button
+                class="py-3 px-8 w-max flex items-center justify-between gap-2 bg-black/80 text-white rounded-full mx-auto hover:bg-black duration-500 dark:bg-transparent dark:border-[0.5px] dark:hover:bg-darkHover"
+                type="submit">
+                submit now
+                <img src="images/assets/right-arrow-white.png" alt="" class="w-4">
+            </button>
+        </form>
+    </div>
+    <!-- connect section end -->
+
+    <!-- footer section start -->
+    <div class="mt-20">
+        <div class="text-center">
+            <a href="#top">
+                <img src="images/logo/logo_light.png" alt="" class="w-36 mx-auto mb-2 dark:hidden">
+                <img src="images/logo/logo_dark.png" alt="" class="w-36 mx-auto mb-2 hidden dark:block">
+            </a>
+
+            <div class="w-max flex items-center gap-2 mx-auto">
+                <img src="images/assets/mail_icon.png" alt="" class="w-6 dark:hidden">
+                <img src="images/assets/mail_icon_dark.png" alt="" class="w-6 hidden dark:block">
+                <a href="#connect">hendrikgunil68@gmail.com</a>
+            </div>
+        </div>
+
+        <div class="text-center sm:flex items-center justify-between border-t border-gray-400 mx-[10%] mt-12 py-6">
+            <p class="text-xs md:text-base">&#169; 2024 Towing68. All Rights Reserved.</p>
+            <ul class="flex items-center justify-center gap-10 mt-4 sm:mt-0">
+                <li><a href="https://www.facebook.com/anggini.susanti.1">Facebook</a></li>
+                <li><a href="https://www.instagram.com/azoela">Instagram</a></li>
+                <li><a href="https://www.tiktok.com/@towing68">Tiktok</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- footer section end -->
+
+    <script src="script.js"></script>
+</body>
+
+</html>
